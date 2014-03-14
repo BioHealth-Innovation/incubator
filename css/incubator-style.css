@@ -251,7 +251,7 @@ footer {
 }
 
 .button:active {
-
+	text-decoration: none;
 }
 
 .apply {
