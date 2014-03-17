@@ -16,9 +16,30 @@
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
-	<body id="top">
+	<body id="why-bhi">
+		<div id="right-menu" class="hidden-sm hidden-xs">
+				<ul>
+					<li>
+						<a href="#why-bhi">Why BHI?</a>
+					</li>
+					<li>
+						<a href="#location">Location</a>
+					</li>
+					<li>
+						<a href="#space">Coworking Space</a>
+					</li>
+					<li>
+						<a href="#eir">EIR Support</a>
+					</li>
+					<li>
+						<a href="#startup">Startup Package</a>
+					</li>
+					<li>
+						<a href="#apply">Apply</a>
+					</li>
+				</ul>
+			</div>
 		<div class="container-fluid">
-
 			<div class="row background" id="printer">
 				<div class="overlay" id="overlay">
 					<img class="main-icon" src="images/dna-circle.png" />
@@ -40,7 +61,7 @@
 				</div>
 			</div>
 
-			<div class="row map">
+			<div class="row map" id="location">
 				<div class="title-main">
 					Rockville Location
 				</div>
@@ -49,14 +70,14 @@
 				</div>
 			</div>
 
-			<div class="row">
+			<div class="row" id="space">
 				<div class="title-main">
 					Coworking Space
 				</div>
 				<img id="space" src="images/incubator-space.png" />
 			</div>
 
-			<div class="row people-bios">
+			<div class="row people-bios" id="eir">
 				<div class="title-main">
 					Entrepreneur Support
 				</div>
@@ -99,7 +120,7 @@
 				</div>
 			</div>
 
-			<div class="row">
+			<div class="row" id="startup">
 				<div class="title-main">
 					Startup Package
 				</div>
@@ -201,17 +222,17 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="col-md-2 col-xs-10 banking tile">
 					<p>
 						Banking
 					</p>
 					<a href="#"> <img class="logo" src="images/logos/mtb-logo.png"/></a>
 				</div>
-				
-			<!--</div>
-			<div class="row background">-->
-	
+
+				<!--</div>
+				<div class="row background">-->
+
 				<div class="col-md-2 col-xs-10 lab-space tile">
 					<p>
 						Laboratory Space
@@ -220,7 +241,7 @@
 					<a href="#"> <img class="logo" src="images/logos/biop-logo.png"/></a>
 					<a href="#"> <img class="logo" src="images/logos/bri-logo.png"/></a>
 				</div>
-				
+
 				<div class="col-md-2 col-xs-10 grants tile">
 					<p>
 						Grant Consulting
@@ -270,13 +291,7 @@
 						</div>
 					</div>
 				</div>
-				
-				
 
-				
-				
-
-				
 			</div>
 			<!--
 			<div id="logo-slider" class="logo-slider-section">
@@ -333,13 +348,14 @@
 		</div>
 	</body>
 
-	<footer>
+	<footer id="footer">
 		<p>
 			© 2014 BioHealth Innovation, Inc
 		</p>
 	</footer>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="js/map.js"></script>
+	<script src="js/menu-scroll.js"></script>
 	<script src="js/smooth.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/collapse-row.js"></script>
