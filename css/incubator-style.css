@@ -28,8 +28,9 @@ a:hover {
 	display: block;
 	margin-top: 20%;
 	margin-left: -30px;
-	#background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0,0,0,0.7);
 	padding: 15px;
+	display: none;
 }
 
 #left-menu ul {
@@ -39,7 +40,6 @@ a:hover {
 #left-menu ul a{
 	opacity: 0.2;  
 	color: #FFF;
-	display: none;
 }
 
 #left-menu ul a:hover {
@@ -78,7 +78,7 @@ a:hover {
 }
 
 #printer {
-	background-image: url(/incubator/images/DSCN0101.JPG);
+	background-image: url(/incubator/images/DSCN0099.JPG);
 }
 
 #space {
@@ -126,6 +126,9 @@ a:hover {
 .people:hover {
 	border: 2px solid #231F20;
 	cursor: pointer;
+	
+	filter: none;
+	
 }
 
 .people-bios {
@@ -211,7 +214,7 @@ footer {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	background-image: url(/incubator/images/DSCN0101.JPG);
+	background-image: url(/incubator/images/DSCN0099.JPG);
 	color: #FFF;
 	height: 20%;
 }
