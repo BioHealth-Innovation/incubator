@@ -18,27 +18,27 @@
 	</head>
 	<body id="why-bhi">
 		<div id="left-menu" class="hidden-sm hidden-xs">
-				<ul>
-					<li>
-						<a href="#why-bhi">Why BHI?</a>
-					</li>
-					<li>
-						<a href="#location">Location</a>
-					</li>
-					<li>
-						<a href="#space">Coworking Space</a>
-					</li>
-					<li>
-						<a href="#eir">EIR Support</a>
-					</li>
-					<li>
-						<a href="#startup">Startup Package</a>
-					</li>
-					<li>
-						<a href="#apply">Apply</a>
-					</li>
-				</ul>
-			</div>
+			<ul>
+				<li>
+					<a href="#why-bhi">Why BHI?</a>
+				</li>
+				<li>
+					<a href="#location">Location</a>
+				</li>
+				<li>
+					<a href="#space">Coworking Space</a>
+				</li>
+				<li>
+					<a href="#eir">EIR Support</a>
+				</li>
+				<li>
+					<a href="#startup">Startup Package</a>
+				</li>
+				<li>
+					<a href="#apply">Apply</a>
+				</li>
+			</ul>
+		</div>
 		<div class="container-fluid">
 			<div class="row background" id="printer">
 				<div class="overlay" id="overlay">
@@ -314,12 +314,35 @@
 
 			</div>
 
+			<?php
+			if (isset($_POST['submit'])) {
+				$to = "test1423123123@mailinator.com";
+				// this is your Email address
+				$from = $_POST['email'];
+				// this is the sender's Email address
+				$first_name = $_POST['firstname'];
+				$last_name = $_POST['lastname'];
+				$subject = "Form submission";
+				$subject2 = "Copy of your form submission";
+				$message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+				$message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+
+				$headers = "From:" . $from;
+				$headers2 = "From:" . $to;
+				mail($to, $subject, $message, $headers);
+				mail($from, $subject2, $message2, $headers2);
+				// sends a copy of the message to the sender
+				echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+				// You can also use header('Location: thank_you.php'); to redirect to another page.
+			}
+			?>
+
 			<div class="row contact" id="apply">
 				<div class="title-main">
 					Apply Today
 				</div>
 				<div class="application-section">
-					<form>
+					<form action="" method="post">
 						<table>
 							<tr>
 								<td>First name</td>
@@ -340,8 +363,9 @@
 								</td>
 							</tr>
 						</table>
-						<textarea maxlength="1000" name="email-body" rows=10 cols=30></textarea>
-						<a href="#why-bhi" class="button" id="submit">Submit</a>
+						<textarea maxlength="1000" name="message" rows=10 cols=30></textarea>
+						<a href="#why-bhi" class="button" id="submit" type="submit">Submit</a>
+						<input type="submit" name="submit" value="Submit">
 					</form>
 				</div>
 			</div>
