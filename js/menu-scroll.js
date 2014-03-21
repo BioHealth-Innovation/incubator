@@ -1,6 +1,6 @@
 // Cache selectors
 var lastId,
-    topMenu = $("#right-menu"),
+    topMenu = $("#left-menu"),
     // All list items
     menuItems = topMenu.find("a"),
     // Anchors corresponding to menu items

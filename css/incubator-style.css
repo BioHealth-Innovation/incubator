@@ -22,41 +22,42 @@ a:hover {
 	color: #231F20;
 }
 
-#right-menu {
+#left-menu {
 	z-index: 100;
 	position:fixed;
 	display: block;
 	margin-top: 20%;
-	margin-left: -15px;
-	background-color: rgba(0,0,0,0.7);
+	margin-left: -30px;
+	#background-color: rgba(0,0,0,0.7);
 	padding: 15px;
 }
 
-#right-menu ul {
+#left-menu ul {
 	margin-bottom: -5px;
 }
 
-#right-menu ul a{
+#left-menu ul a{
 	opacity: 0.2;  
 	color: #FFF;
+	display: none;
 }
 
-#right-menu ul a:hover {
+#left-menu ul a:hover {
 	opacity: 1;
 	transition: opacity .25s ease-in-out;
    -moz-transition: opacity .25s ease-in-out;
    -webkit-transition: opacity .25s ease-in-out;
 }
 
-#right-menu li.active {
+#left-menu li.active {
 	list-style: url(/incubator/images/active-dot.png);
 }
 
-#right-menu li.active a{
+#left-menu li.active a{
 	opacity: 1;	
 }
 
-#right-menu li {
+#left-menu li {
 	list-style: url(/incubator/images/default-dot.png);
 }
 
@@ -124,6 +125,7 @@ a:hover {
 
 .people:hover {
 	border: 2px solid #231F20;
+	cursor: pointer;
 }
 
 .people-bios {
