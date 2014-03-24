@@ -40,6 +40,7 @@
 			</ul>
 		</div>
 		<div class="container-fluid">
+
 			<div class="row background" id="printer">
 				<div class="overlay" id="overlay">
 					<img class="main-icon" src="images/dna-circle.png" />
@@ -50,13 +51,21 @@
 				<a href="#apply" class="button apply">Apply Now!</a>
 			</div>
 
-			<div class="row">
+			<div class="row shadow-top">
+				<div class="top-logo-container">
+					<a href="http://nbia.org/" target="_blank"><img src="images/logos/NBIA_member-logo.gif" /></a>
+					<a href="http://biohealthinnovation.org/" target="_blank"><img src="images/logos/BHI HQ Logo_800x179.png" /></a>
+					<a href="http://tedco.md/" target="_blank"><img src="images/logos/TEDCO_Logo.png" /></a>
+				</div>
+			</div>
+
+			<div class="row main-description">
 				<div class="title-main">
 					Why BHI?
 				</div>
 				<div class="col-md-5 description-section">
 					<p>
-						Why not? More text to follow.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque imperdiet sodales magna. Curabitur condimentum enim nunc, nec lobortis tellus dapibus nec. Aliquam lacinia feugiat dolor quis ullamcorper. Duis mattis eget ante sed rhoncus. Duis lacinia varius velit vitae mattis. Morbi eget massa ac erat venenatis tempus sit amet non mi. Nulla diam ligula, ullamcorper vel placerat nec, ornare ornare lectus.
 					</p>
 				</div>
 			</div>
@@ -67,6 +76,9 @@
 				</div>
 				<div class="col-md-14">
 					<div id="map-canvas"></div>
+					<button type="button" class="btn btn-default btn-lg" id="resize-map-button">
+						RESIZE
+					</button>
 				</div>
 			</div>
 
@@ -76,47 +88,59 @@
 				</div>
 				<img id="space" src="images/incubator-space.png" />
 			</div>
+			
+			<div class="row tenants">
+				<div class="tenant-logo-container">
+					<a href="#" target="_blank"><img src="http://placehold.it/150x35&text=MockV" /></a>
+					<a href="#" target="_blank"><img src="http://placehold.it/150x35&text=Strand" /></a>
+					<a href="#" target="_blank"><img src="http://placehold.it/150x35&text=Mimetas" /></a>
+				</div>
+			</div>
 
 			<div class="row people-bios" id="eir">
 				<div class="title-main">
 					Entrepreneur Support
 				</div>
-				<div class="container">
-					<div class="col-sm-3 col-xs-10">
-						<a data-toggle="modal" data-target="#todd-bio-modal" > <img class="people" src="images/todd-chappell.png"/></a>
-					</div>
+				<div class="col-sm-2 col-xs-10">
+					<a data-toggle="modal" data-target="#todd-bio-modal" > <img class="people" src="http://placehold.it/150&text=NIH"/></a>
+				</div>
 
-					<div class="modal fade" id="todd-bio-modal" tabindex="-1" role="dialog" aria-labelledby="todd-bio-label" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-										&times;
-									</button>
-									<h4 class="modal-title" id="todd-bio-label">Todd Chappell</h4>
-								</div>
-								<div class="modal-body">
-									<img class="people" src="images/todd-chappell.png"/>
-									Todd Chappell is currently an Entrepreneur-in-Residence (EIR) at the NIH. As the first EIR at NIH, he will assist the Office of Technology Transfer (OTT) in the evaluation of existing technologies, provide an entrepreneurial perspective to OTT in its evaluation of new licensing proposals from start-up companies, advise OTT on opportunities for new ventures based on NIH/Food & Drug Administration (FDA) technologies, assist with developmental strategies, and mentor scientists to help ensure their research becomes commercially valuable. From 2009 to early 2012, Todd was Vice President of Operations for Shape Pharmaceuticals, where he oversaw all day-to-day operations involved in the development of a novel HDAC inhibitor for Cutaneous-T-Cell-Lymphoma. Prior to that, he was at CombinatoRx Inc. for eight years and served as Director of New Products. In that role, he led at team of analysts overseeing all early-stage product development and strategy across a range of therapeutic areas including inflammation, infectious disease, dermatology, oncology, and ophthalmology. Todd directly oversaw the advancement of three programs from assay stage into phase II human clinical studies, and was co-inventor on 10 product patents. He was also responsible for product in-licensing and alliance management for discovery-stage collaborations. Todd holds a B.S. from University of California at Los Angeles and a M.B.A. from Boston University.
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-default" data-dismiss="modal">
-										Close
-									</button>
-								</div>
+				<div class="modal fade" id="todd-bio-modal" tabindex="-1" role="dialog" aria-labelledby="todd-bio-label" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+									&times;
+								</button>
+								<h4 class="modal-title" id="todd-bio-label">Todd Chappell</h4>
+							</div>
+							<div class="modal-body">
+								<img class="people" src="images/todd-chappell.png"/>
+								Todd Chappell is currently an Entrepreneur-in-Residence (EIR) at the NIH. As the first EIR at NIH, he will assist the Office of Technology Transfer (OTT) in the evaluation of existing technologies, provide an entrepreneurial perspective to OTT in its evaluation of new licensing proposals from start-up companies, advise OTT on opportunities for new ventures based on NIH/Food & Drug Administration (FDA) technologies, assist with developmental strategies, and mentor scientists to help ensure their research becomes commercially valuable. From 2009 to early 2012, Todd was Vice President of Operations for Shape Pharmaceuticals, where he oversaw all day-to-day operations involved in the development of a novel HDAC inhibitor for Cutaneous-T-Cell-Lymphoma. Prior to that, he was at CombinatoRx Inc. for eight years and served as Director of New Products. In that role, he led at team of analysts overseeing all early-stage product development and strategy across a range of therapeutic areas including inflammation, infectious disease, dermatology, oncology, and ophthalmology. Todd directly oversaw the advancement of three programs from assay stage into phase II human clinical studies, and was co-inventor on 10 product patents. He was also responsible for product in-licensing and alliance management for discovery-stage collaborations. Todd holds a B.S. from University of California at Los Angeles and a M.B.A. from Boston University.
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">
+									Close
+								</button>
 							</div>
 						</div>
 					</div>
+				</div>
 
-					<div class="col-sm-3 col-xs-10">
-						<a href="javascript:"> <img class="people" src="images/192x192.gif"/></a>
-					</div>
-					<div class="col-sm-3 col-xs-10">
-						<a href="javascript:"> <img class="people" src="images/192x192.gif"/></a>
-					</div>
-					<div class="col-sm-3 col-xs-10">
-						<a href="javascript:"> <img class="people" src="images/192x192.gif"/></a>
-					</div>
+				<div class="col-sm-2 col-xs-10">
+					<a href="javascript:"> <img class="people" src="http://placehold.it/150&text=NHLBI"/></a>
+				</div>
+				<div class="col-sm-2 col-xs-10">
+					<a href="javascript:"> <img class="people" src="http://placehold.it/150&text=UMV"/></a>
+				</div>
+				<div class="col-sm-2 col-xs-10">
+					<a href="javascript:"> <img class="people" src="http://placehold.it/150&text=BD"/></a>
+				</div>
+				<div class="col-sm-2 col-xs-10">
+					<a href="javascript:"> <img class="people" src="http://placehold.it/150&text=CFLD"/></a>
+				</div>
+				<div class="col-sm-2 col-xs-10">
+					<a href="javascript:"> <img class="people" src="http://placehold.it/150&text=..."/></a>
 				</div>
 			</div>
 
@@ -124,7 +148,7 @@
 				<div class="title-main">
 					Startup Package
 				</div>
-				<div class="col-md-5 col-xs-10 description-section">
+				<div class="col-md-5 col-sm-2 col-xs-8 description-section">
 					<p>
 						BHI helps connect you with a variety of pro-bono service providers.
 					</p>
@@ -132,14 +156,14 @@
 			</div>
 
 			<div class="row background">
-				<div class="col-md-2 col-xs-10 incubation  tile">
+				<div class="col-md-2 col-sm-2 col-xs-8 incubation  tile">
 					<p>
 						Incubation
 					</p>
 					<a href="javascript:"> <img class="logo" src="images/logos/bhi-logo.png"/></a>
 				</div>
 
-				<div class="col-md-2 col-xs-10 int-property tile">
+				<div class="col-md-2 col-sm-2 col-xs-8 int-property tile">
 					<p>
 						Intellectual Property
 					</p>
@@ -167,7 +191,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-2 col-xs-10 corp-legal tile">
+				<div class="col-md-2 col-sm-2 col-xs-8 corp-legal tile">
 					<p>
 						Corporate Legal
 					</p>
@@ -195,7 +219,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-2 col-xs-10 accounting tile">
+				<div class="col-md-2 col-sm-2 col-xs-8 accounting tile">
 					<p>
 						Accounting
 					</p>
@@ -223,7 +247,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-2 col-xs-10 banking tile">
+				<div class="col-md-2 col-sm-2 col-xs-8 banking tile">
 					<p>
 						Banking
 					</p>
@@ -251,104 +275,152 @@
 					</div>
 				</div>
 
-					<!--</div>
-					<div class="row background">-->
+				<!--</div>
+				<div class="row background">-->
 
-					<div class="col-md-2 col-xs-10 lab-space tile">
-						<p>
-							Laboratory Space
-						</p>
-						<a href="javascript:"> <img class="logo" src="images/logos/bin-logo.png"/></a>
-						<a href="javascript:"> <img class="logo" src="images/logos/biop-logo.png"/></a>
-						<a href="javascript:"> <img class="logo" src="images/logos/bri-logo.png"/></a>
-					</div>
+				<div class="col-md-2 col-sm-2 col-xs-8 lab-space tile">
+					<p>
+						Laboratory Space
+					</p>
+					<a href="javascript:void()"> <img class="logo" src="images/logos/bin-logo.png"/></a>
+					<a href="javascript:void()"> <img class="logo" src="images/logos/biop-logo.png"/></a>
+					<a href="javascript:void()"> <img class="logo" src="images/logos/bri-logo.png"/></a>
+				</div>
 
-					<div class="col-md-2 col-xs-10 grants tile">
-						<p>
-							Grant Consulting
-						</p>
-						<a data-toggle="modal" data-target="#bbc-modal" > <img class="logo" src="images/logos/bbc-logo.png"/></a>
-						<a data-toggle="modal" data-target="#ss-modal" > <img class="logo" src="images/logos/ss-logo.png"/></a>
-					</div>
+				<div class="col-md-2 col-sm-2 col-xs-8 grants tile">
+					<p>
+						Grant Consulting
+					</p>
+					<a data-toggle="modal" data-target="#bbc-modal" > <img class="logo" src="images/logos/bbc-logo.png"/></a>
+					<a data-toggle="modal" data-target="#ss-modal" > <img class="logo" src="images/logos/ss-logo.png"/></a>
+				</div>
 
-					<div class="modal fade" id="bbc-modal" tabindex="-1" role="dialog" aria-labelledby="bbc-modal-label" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-										&times;
-									</button>
-									<h4 class="modal-title" id="bbc-modal-label">Biotechnology Business Consultants</h4>
-								</div>
-								<div class="modal-body">
-									BBC Entrepreneurial Training &amp; Consulting, LLC (BBCetc)  works with technology-based entrepreneurs on strategies to advance R&D efforts to commercialization. In particular, the BBCetc team is nationally recognized for its success in helping clients secure federal funding through the Federal Small Business Innovation Research (SBIR) and Small Business Technology Transfer (STTR) programs.  BBCetc services include commercialization planning, research grant assistance, SBIR/STTR training and proposal development assistance, and grants and contract management.
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-default" data-dismiss="modal">
-										Close
-									</button>
-								</div>
+				<div class="modal fade" id="bbc-modal" tabindex="-1" role="dialog" aria-labelledby="bbc-modal-label" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+									&times;
+								</button>
+								<h4 class="modal-title" id="bbc-modal-label">Biotechnology Business Consultants</h4>
 							</div>
-						</div>
-					</div>
-
-					<div class="modal fade" id="ss-modal" tabindex="-1" role="dialog" aria-labelledby="ss-modal-label" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-										&times;
-									</button>
-									<h4 class="modal-title" id="ss-modal-label">Science Sherpa</h4>
-								</div>
-								<div class="modal-body">
-									The Science Sherpa offers a combination of services and programs to help researchers, technology companies, colleges, universities, medical schools, and hospitals win grants and contracts and reduce the stress and pressure of grant and proposal preparation.
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-default" data-dismiss="modal">
-										Close
-									</button>
-								</div>
+							<div class="modal-body">
+								BBC Entrepreneurial Training &amp; Consulting, LLC (BBCetc)  works with technology-based entrepreneurs on strategies to advance R&D efforts to commercialization. In particular, the BBCetc team is nationally recognized for its success in helping clients secure federal funding through the Federal Small Business Innovation Research (SBIR) and Small Business Technology Transfer (STTR) programs.  BBCetc services include commercialization planning, research grant assistance, SBIR/STTR training and proposal development assistance, and grants and contract management.
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">
+									Close
+								</button>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="row background" style="height: 70px" id="printer">
-
-				</div>
-
-				<div class="row contact" id="apply">
-					<div class="title-main">
-						Apply Today
-					</div>
-					<div class="application-section">
-						<table>
-							<tr>
-								<td>First name</td>
-								<td>
-								<input type="text" name="firstname">
-								</td>
-							</tr>
-							<tr>
-								<td>Last name</td>
-								<td>
-								<input type="text" name="lastname">
-								</td>
-							</tr>
-							<tr>
-								<td>Email</td>
-								<td>
-								<input type="text" name="email" />
-								</td>
-							</tr>
-						</table>
-						<textarea maxlength="1000" name="message" rows=10 cols=30></textarea>
-						<a href="#why-bhi" class="button" id="submit" type="submit">Submit</a>
-						</form>
+				<div class="modal fade" id="ss-modal" tabindex="-1" role="dialog" aria-labelledby="ss-modal-label" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+									&times;
+								</button>
+								<h4 class="modal-title" id="ss-modal-label">Science Sherpa</h4>
+							</div>
+							<div class="modal-body">
+								The Science Sherpa offers a combination of services and programs to help researchers, technology companies, colleges, universities, medical schools, and hospitals win grants and contracts and reduce the stress and pressure of grant and proposal preparation.
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">
+									Close
+								</button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
+
+			<div class="row">
+				<div class="title-main">
+					Other Support
+				</div>
+				<!-- the tabs -->
+				<ul class="css-tabs">
+					<li>
+						<a href="javascript:void()"><img src="http://placehold.it/100&text=PR"></a>
+					</li>
+					<li>
+						<a href="javascript:void()"><img src="http://placehold.it/100&text=IT"></a>
+					</li>
+					<li>
+						<a href="javascript:void()"><img src="http://placehold.it/100&text=Admin"></a>
+					</li>
+					<li>
+						<a href="javascript:void()"><img src="http://placehold.it/100&text=Other"></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="row">
+				<div class="css-panes">
+					<div class="p1">
+						<p>
+							First Tab
+						</p>
+					</div>
+					<div class="p2">
+						<p>
+							Second Tab
+						</p>
+					</div>
+					<div class="p3">
+						<p>
+							Third Tab
+						</p>
+					</div>
+					<div class="p4">
+						<p>
+							Fourth Tab
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row contact" id="apply">
+				<div class="title-main">
+					Apply Today
+				</div>
+				<div class="application-section">
+					<table>
+						<tr>
+							<td>Company</td>
+							<td>
+							<input type="text" name="company">
+							</td>
+						</tr>
+						<tr>
+							<td>First name</td>
+							<td>
+							<input type="text" name="firstname">
+							</td>
+						</tr>
+						<tr>
+							<td>Last name</td>
+							<td>
+							<input type="text" name="lastname">
+							</td>
+						</tr>
+						<tr>
+							<td>Email</td>
+							<td>
+							<input type="text" name="email" />
+							</td>
+						</tr>
+					</table>
+					<textarea maxlength="1000" name="message" rows=10 cols=30></textarea>
+					<a href="#why-bhi" class="button" id="submit" type="submit">Submit</a>
+					</form>
+				</div>
+			</div>
+		</div>
 	</body>
 
 	<footer id="footer">
@@ -357,10 +429,41 @@
 		</p>
 	</footer>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+
 	<script src="js/map.js"></script>
 	<script src="js/menu-scroll.js"></script>
 	<script src="js/smooth.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/collapse-row.js"></script>
+
+	<script>
+		$(function() {
+			// setup ul.tabs to work as tabs for each div directly under div.panes
+			$(".css-tabs").tabs(".css-panes > div", {
+				event : 'mouseover'
+			});
+		});
+	</script>
+
+	<script>
+		var map = $('#map-canvas');
+		$('#resize-map-button').click(function() {
+
+			var currHeight = map.height();
+
+			if (currHeight < 600) {
+				$('#map-canvas').animate({
+					height : 600
+				}, 1500);
+			}
+			else {
+				$('#map-canvas').animate({
+				height : 300
+				}, 1500);
+			}
+
+			google.maps.event.trigger(map, 'resize');
+		});
+	</script>
 </html>
-</div>

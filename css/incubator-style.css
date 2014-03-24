@@ -1,4 +1,4 @@
-html,body {
+html, body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -8,8 +8,7 @@ html,body {
 	color: #231F20;
 }
 
-.row {
-	margin-bottom: 15px;
+.row {#margin-bottom: 15px;
 }
 
 a {
@@ -22,9 +21,53 @@ a:hover {
 	color: #231F20;
 }
 
+.top-logo-container {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	width: 100%;
+	max-width: 425px;
+}
+
+.shadow-top {
+	-webkit-box-shadow: 0 -8px 5px -10px black;
+	-moz-box-shadow: 0 -8px 5px -10px black;
+	box-shadow: 0 -8px 5px -10px black;
+}
+
+.top-logo-container img, .tenant-logo-container img {
+	margin: 5px;
+	margin-right: 10px;
+	margin-left: 10px;
+	height: 35px;
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+.top-logo-container img:hover {
+	filter: none;
+	-webkit-filter: grayscale(0%);
+}
+
+.main-description {
+	background-color: #eee;
+	min-height: 300px;
+}
+
+.main-description p {
+	width: 100%;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: justify;
+}
+
 #left-menu {
 	z-index: 100;
-	position:fixed;
+	position: fixed;
 	display: block;
 	margin-top: 20%;
 	margin-left: -30px;
@@ -37,24 +80,24 @@ a:hover {
 	margin-bottom: -5px;
 }
 
-#left-menu ul a{
-	opacity: 0.2;  
+#left-menu ul a {
+	opacity: 0.2;
 	color: #FFF;
 }
 
 #left-menu ul a:hover {
 	opacity: 1;
 	transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
 }
 
 #left-menu li.active {
 	list-style: url(/incubator/images/active-dot.png);
 }
 
-#left-menu li.active a{
-	opacity: 1;	
+#left-menu li.active a {
+	opacity: 1;
 }
 
 #left-menu li {
@@ -82,10 +125,13 @@ a:hover {
 }
 
 #space {
-	opacity: 0.6;
 	width: 100%;
 	margin-top: 15px;
 	margin-bottom: 15px;
+}
+
+#space img {
+	opacity: 0.6;
 }
 
 .about {
@@ -100,7 +146,7 @@ a:hover {
 }
 
 #map-canvas {
-	min-height: 400px;
+	min-height: 300px;
 	margin: 0;
 	padding: 0;
 }
@@ -116,7 +162,7 @@ a:hover {
 }
 
 .people {
-	width: 200px;
+	width: 150px;
 	display: block;
 	margin: 20px auto 60px;
 	border: 2px solid #FF454C;
@@ -126,14 +172,25 @@ a:hover {
 .people:hover {
 	border: 2px solid #231F20;
 	cursor: pointer;
-	
 	filter: none;
-	
 }
 
 .people-bios {
 	background-color: #eee;
 	padding: 5px;
+}
+
+.tenants {
+	min-height: 200px;
+}
+
+.tenant-logo-container {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	width: 100%;
+	max-width: 600px;
 }
 
 .logo {
@@ -142,9 +199,9 @@ a:hover {
 	display: block;
 	border: 1px solid #fff;
 	box-shadow: 0 0 5px #231F20;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
+	/*-webkit-border-radius: 20px;
+	 -moz-border-radius: 20px;
+	 border-radius: 20px;*/
 }
 
 .logo:hover {
@@ -163,7 +220,7 @@ a:hover {
 
 form {
 	width: 600px;
-	font-weight: 400;
+	
 }
 
 input[type=text] {
@@ -183,6 +240,7 @@ input[type=text] {
 
 table {
 	width: 600px;
+	font-weight: 400;
 }
 
 textarea {
@@ -291,41 +349,96 @@ footer {
 	text-align: center;
 	color: #FFF;
 	font-size: 18px;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
+	/*-webkit-border-radius: 20px;
+	 -moz-border-radius: 20px;
+	 border-radius: 20px;*/
 	margin: 22px;
 	font-weight: 400;
 }
 
 .incubation {
-	background-color: #12948a;
+	background-color: #FF454C;
 }
 
 .int-property {
-	background-color: #12948a;
+	background-color: #FF454C;
 }
 
 .corp-legal {
-	background-color: #12948a;
+	background-color: #FF454C;
 }
 
 .accounting {
-	background-color: #12948a;
+	background-color: #FF454C;
 }
 
 .banking {
-	background-color: #12948a;
+	background-color: #FF454C;
 }
 
 .lab-space {
-	background-color: #12948a;
+	background-color: #FF454C;
 }
 
 .grants {
-	background-color: #12948a;
+	background-color: #FF454C;
 }
 
 .modal-body {
 	font-weight: 400;
 }
+
+/* TAB CSS */
+
+/* root element for tabs  */
+ul.css-tabs {
+	margin-top: 20px;
+	list-style: none;
+	text-align: center;
+	-webkit-padding-start: 0px;
+}
+
+/* single tab */
+ul.css-tabs li {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	display: inline-block;
+}
+
+/* link inside the tab. uses a background image */
+ul.css-tabs a {
+	float: left;
+	font-size: 13px;
+	display: block;
+	padding: 10px 10px;
+	text-decoration: none;
+	cursor: default;
+}
+
+/* selected tab */
+ul.css-tabs a.current {
+	background-color: #ff454c;
+	color: #000;
+	cursor: default;
+}
+
+/* tab pane */
+
+.css-panes div {
+	display: none;
+	min-height: 150px;
+	padding: 15px 20px;
+	background-color: #ddd;
+	font-weight: 400;
+}
+
+.css-panes div p {
+	width: 100%;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: justify;
+}
+
