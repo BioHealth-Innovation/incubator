@@ -41,7 +41,7 @@
 		</div>
 		<div class="container-fluid">
 
-			<div class="row background" id="printer">
+			<div class="row background printer">
 				<div class="overlay" id="overlay">
 					<img class="main-icon" src="images/dna-circle.png" />
 					<div class="title">
@@ -52,7 +52,7 @@
 			</div>
 
 			<div class="row shadow-top">
-				<div class="top-logo-container">
+				<div class="logo-container">
 					<a href="http://nbia.org/" target="_blank"><img src="images/logos/NBIA_member-logo.gif" /></a>
 					<a href="http://biohealthinnovation.org/" target="_blank"><img src="images/logos/BHI HQ Logo_800x179.png" /></a>
 					<a href="http://tedco.md/" target="_blank"><img src="images/logos/TEDCO_Logo.png" /></a>
@@ -63,34 +63,36 @@
 				<div class="title-main">
 					Why BHI?
 				</div>
-				<div class="col-md-5 description-section">
+				<div class="col-md-5 description-text">
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque imperdiet sodales magna. Curabitur condimentum enim nunc, nec lobortis tellus dapibus nec. Aliquam lacinia feugiat dolor quis ullamcorper. Duis mattis eget ante sed rhoncus. Duis lacinia varius velit vitae mattis. Morbi eget massa ac erat venenatis tempus sit amet non mi. Nulla diam ligula, ullamcorper vel placerat nec, ornare ornare lectus.
 					</p>
 				</div>
 			</div>
 
-			<div class="row map" id="location">
+			<div class="row" id="location">
 				<div class="title-main">
 					Rockville Location
+					<br>
+					<button type="button" class="btn btn-default btn-lg" id="resize-map-button">
+						Explore
+					</button>
 				</div>
 				<div class="col-md-14">
 					<div id="map-canvas"></div>
-					<button type="button" class="btn btn-default btn-lg" id="resize-map-button">
-						RESIZE
-					</button>
+
 				</div>
 			</div>
 
-			<div class="row" id="space">
+			<div class="row space shadow-top" id="space">
 				<div class="title-main">
 					Coworking Space
 				</div>
-				<img id="space" src="images/incubator-space.png" />
+				<img src="images/incubator-space.png" />
 			</div>
-			
+
 			<div class="row tenants">
-				<div class="tenant-logo-container">
+				<div class="logo-container tenant">
 					<a href="#" target="_blank"><img src="http://placehold.it/150x35&text=MockV" /></a>
 					<a href="#" target="_blank"><img src="http://placehold.it/150x35&text=Strand" /></a>
 					<a href="#" target="_blank"><img src="http://placehold.it/150x35&text=Mimetas" /></a>
@@ -148,7 +150,7 @@
 				<div class="title-main">
 					Startup Package
 				</div>
-				<div class="col-md-5 col-sm-2 col-xs-8 description-section">
+				<div class="col-md-5 col-sm-2 col-xs-8 description-text">
 					<p>
 						BHI helps connect you with a variety of pro-bono service providers.
 					</p>
@@ -282,9 +284,9 @@
 					<p>
 						Laboratory Space
 					</p>
-					<a href="javascript:void()"> <img class="logo" src="images/logos/bin-logo.png"/></a>
-					<a href="javascript:void()"> <img class="logo" src="images/logos/biop-logo.png"/></a>
-					<a href="javascript:void()"> <img class="logo" src="images/logos/bri-logo.png"/></a>
+					<a href="javascript:"> <img class="logo" src="images/logos/bin-logo.png"/></a>
+					<a href="javascript:"> <img class="logo" src="images/logos/biop-logo.png"/></a>
+					<a href="javascript:"> <img class="logo" src="images/logos/bri-logo.png"/></a>
 				</div>
 
 				<div class="col-md-2 col-sm-2 col-xs-8 grants tile">
@@ -338,23 +340,31 @@
 				</div>
 			</div>
 
-			<div class="row">
+			<div class="row tabs">
 				<div class="title-main">
 					Other Support
 				</div>
 				<!-- the tabs -->
 				<ul class="css-tabs">
 					<li>
-						<a href="javascript:void()"><img src="http://placehold.it/100&text=PR"></a>
+						<a href="javascript:"><img src="/incubator/images/icons/bullhorn.svg"><span>
+							<br>
+							PR</span></a>
 					</li>
 					<li>
-						<a href="javascript:void()"><img src="http://placehold.it/100&text=IT"></a>
+						<a href="javascript:"><img src="/incubator/images/icons/screen.svg"><span>
+							<br>
+							IT</span></a>
 					</li>
 					<li>
-						<a href="javascript:void()"><img src="http://placehold.it/100&text=Admin"></a>
+						<a href="javascript:"><img src="/incubator/images/icons/user.svg"><span>
+							<br>
+							Admin</span></a>
 					</li>
 					<li>
-						<a href="javascript:void()"><img src="http://placehold.it/100&text=Other"></a>
+						<a href="javascript:"><img src="/incubator/images/icons/spinner.svg"><span>
+							<br>
+							Other</span></a>
 					</li>
 				</ul>
 			</div>
@@ -388,37 +398,45 @@
 				<div class="title-main">
 					Apply Today
 				</div>
-				<div class="application-section">
-					<table>
-						<tr>
-							<td>Company</td>
-							<td>
-							<input type="text" name="company">
-							</td>
-						</tr>
-						<tr>
-							<td>First name</td>
-							<td>
-							<input type="text" name="firstname">
-							</td>
-						</tr>
-						<tr>
-							<td>Last name</td>
-							<td>
-							<input type="text" name="lastname">
-							</td>
-						</tr>
-						<tr>
-							<td>Email</td>
-							<td>
-							<input type="text" name="email" />
-							</td>
-						</tr>
-					</table>
-					<textarea maxlength="1000" name="message" rows=10 cols=30></textarea>
-					<a href="#why-bhi" class="button" id="submit" type="submit">Submit</a>
-					</form>
-				</div>
+
+				<form class="form-horizontal" role="form">
+					<div class="form-group">
+						<label for="inputEmail3" class="col-sm-4 control-label">Email</label>
+						<div class="col-sm-8">
+							<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputFirstName3" class="col-sm-4 control-label">First Name</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" id="inputFirstName3" placeholder="First Name">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputLastName3" class="col-sm-4 control-label">Last Name</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" id="inputLastName3" placeholder="Last Name">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputCompanyName3" class="col-sm-4 control-label">Company Name</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" id="inputCompanyName3" placeholder="Company Name">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-12">
+					<textarea class="form-control" rows="3"></textarea>
+					</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-10">
+							<button type="submit" class="btn btn-default">
+								Submit
+							</button>
+						</div>
+					</div>
+				</form>
 			</div>
 		</div>
 	</body>
@@ -435,33 +453,26 @@
 	<script src="js/menu-scroll.js"></script>
 	<script src="js/smooth.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/collapse-row.js"></script>
 
-	<script>
+	<script type="text/javascript">
 		$(function() {
 			// setup ul.tabs to work as tabs for each div directly under div.panes
 			$(".css-tabs").tabs(".css-panes > div", {
-				event : 'mouseover'
+				//event : 'mouseover'
 			});
 		});
 	</script>
 
-	<script>
+	<script type="text/javascript">
 		var map = $('#map-canvas');
 		$('#resize-map-button').click(function() {
 
-			var currHeight = map.height();
+			//Check if map is already expanded
+			var h = map.height() < 500 ? 500 : 300;
 
-			if (currHeight < 600) {
-				$('#map-canvas').animate({
-					height : 600
-				}, 1500);
-			}
-			else {
-				$('#map-canvas').animate({
-				height : 300
-				}, 1500);
-			}
+			map.animate({
+				height : h
+			}, 1000);
 
 			google.maps.event.trigger(map, 'resize');
 		});

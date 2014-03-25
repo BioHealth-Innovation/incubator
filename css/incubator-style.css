@@ -8,9 +8,6 @@ html, body {
 	color: #231F20;
 }
 
-.row {#margin-bottom: 15px;
-}
-
 a {
 	text-decoration: none;
 	color: #EC1D25;
@@ -21,7 +18,21 @@ a:hover {
 	color: #231F20;
 }
 
-.top-logo-container {
+/*Row CSS*/
+.shadow-top {
+	-webkit-box-shadow: 0 -8px 5px -10px black;
+	-moz-box-shadow: 0 -8px 5px -10px black;
+	box-shadow: 0 -8px 5px -10px black;
+}
+
+.shadow-bottom {
+	-webkit-box-shadow: 0 10px 5px -10px black;
+	-moz-box-shadow: 0 10px 5px -10px black;
+	box-shadow: 0 10px 5px -10px black;
+}
+
+/* Logo Containers for rows of logos*/
+.logo-container {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -30,13 +41,7 @@ a:hover {
 	max-width: 425px;
 }
 
-.shadow-top {
-	-webkit-box-shadow: 0 -8px 5px -10px black;
-	-moz-box-shadow: 0 -8px 5px -10px black;
-	box-shadow: 0 -8px 5px -10px black;
-}
-
-.top-logo-container img, .tenant-logo-container img {
+.logo-container img{
 	margin: 5px;
 	margin-right: 10px;
 	margin-left: 10px;
@@ -46,24 +51,16 @@ a:hover {
 	-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
 }
 
-.top-logo-container img:hover {
+.logo-container img:hover {
 	filter: none;
 	-webkit-filter: grayscale(0%);
 }
 
-.main-description {
-	background-color: #eee;
-	min-height: 300px;
+.logo-container.tenant {
+	max-width: 600px;	
 }
 
-.main-description p {
-	width: 100%;
-	max-width: 800px;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	text-align: justify;
-}
+/* LEFT MENU *HIDDEN FOR NOW* */
 
 #left-menu {
 	z-index: 100;
@@ -104,15 +101,9 @@ a:hover {
 	list-style: url(/incubator/images/default-dot.png);
 }
 
-.section {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	min-height: 600px;
-	z-index: -1;
-}
 
-.background {
+/* CANVAS BACKGROUNDS */
+.background, footer{
 	background: no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -120,45 +111,76 @@ a:hover {
 	background-size: cover;
 }
 
-#printer {
+.background.printer, footer{
 	background-image: url(/incubator/images/DSCN0101.JPG);
 }
 
-#space {
-	width: 100%;
-	margin-top: 15px;
-	margin-bottom: 15px;
+footer {
+	color: #FFF;
+	height: 20%;
 }
 
-#space img {
-	opacity: 0.6;
-}
+/* SECTIONS */
 
-.about {
+.main-description {
+	background-color: #eee;
 	min-height: 300px;
-	padding: 5px;
 }
 
-.description-section {
+.main-description p {
+	width: 100%;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: justify;
+	font-weight: 400;
+}
+
+.description-text {
 	width: 100%;
 	text-align: center;
 	font-weight: 400;
 }
 
+.tenants {
+	min-height: 200px;
+}
+
+.space img{
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	opacity: 0.6;
+}
+
 #map-canvas {
 	min-height: 300px;
+	height: 100%;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 }
 
-.map {
-	min-height: 300px;
+.infowindow {
+	width: 400px;
+	height: 100%;
+	font-size: 14px;
 }
 
-#infowindow {
-	width: 200px;
-	height: 70px;
-	font-size: 14px;
+.infowindow img {
+	width: 50%;
+	float: right;
+}
+
+.infowindow p {
+	width: 40%;
+	float: left;
+}
+
+.people-bios {
+	background-color: #eee;
+	padding: 5px;
 }
 
 .people {
@@ -175,27 +197,9 @@ a:hover {
 	filter: none;
 }
 
-.people-bios {
-	background-color: #eee;
-	padding: 5px;
-}
-
-.tenants {
-	min-height: 200px;
-}
-
-.tenant-logo-container {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 10px;
-	width: 100%;
-	max-width: 600px;
-}
-
 .logo {
-	width: 80%;
-	margin: 20px auto;
+	width: 100%;
+	margin: 20px auto 0 auto;
 	display: block;
 	border: 1px solid #fff;
 	box-shadow: 0 0 5px #231F20;
@@ -219,42 +223,21 @@ a:hover {
 }
 
 form {
-	width: 600px;
-	
-}
-
-input[type=text] {
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	border: 1px solid #231F20;
-	height: 30px;
-	font-size: 15px;
-	margin: 10px;
-	width: 90%;
-	background-color: #EEE;
-	outline: none;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-table {
-	width: 600px;
-	font-weight: 400;
+	max-width: 500px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	display:block;
 }
 
 textarea {
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	border: 1px solid #231F20;
-	background-color: #EEE;
-	outline: none;
-	padding: 12px;
-	margin: 10px;
-	width: 92%;
-	max-width: 92%;
-	max-height: 300px;
+	max-width 500px;
+	width: 100%;
+	min-width: 100%;
+}
+
+form button {
+	margin-top:10px;
 }
 
 #submit {
@@ -264,17 +247,6 @@ textarea {
 
 #submit:hover {
 	border-color: #231F20;
-}
-
-footer {
-	background: no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-image: url(/incubator/images/DSCN0101.JPG);
-	color: #FFF;
-	height: 20%;
 }
 
 .overlay {
@@ -352,7 +324,7 @@ footer {
 	/*-webkit-border-radius: 20px;
 	 -moz-border-radius: 20px;
 	 border-radius: 20px;*/
-	margin: 22px;
+	margin: 10px;
 	font-weight: 400;
 }
 
@@ -396,40 +368,66 @@ ul.css-tabs {
 	list-style: none;
 	text-align: center;
 	-webkit-padding-start: 0px;
+		background-color: #EEEEEE;
+
 }
 
 /* single tab */
 ul.css-tabs li {
-	padding: 0;
+	padding: 0px;
 	margin: 0;
 	list-style-type: none;
 	display: inline-block;
+	color: #FF454C;
+	font-weight: 400;
 }
 
 /* link inside the tab. uses a background image */
-ul.css-tabs a {
+
+.tabs {
+}
+
+ul.css-tabs a{
+	
 	float: left;
 	font-size: 13px;
 	display: block;
 	padding: 10px 10px;
+	margin: 8px;
 	text-decoration: none;
-	cursor: default;
+	border-bottom: 2px solid #EEEEEE;
+	opacity: 0.5;
+	-webkit-opacity: 0.5;
+	-moz-opacity: 0.5;
+}
+
+ul.css-tabs a img {
+	margin: 5px;		
+}
+
+ul.css-tabs a:hover {
+	color: #FF454C;
+	opacity: 1;
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
 }
 
 /* selected tab */
 ul.css-tabs a.current {
-	background-color: #ff454c;
-	color: #000;
-	cursor: default;
+	border-bottom: 2px solid #FF454C;
+	opacity: 1;
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
 }
 
 /* tab pane */
 
 .css-panes div {
+	border-top: 2px solid #FFFFFF;
 	display: none;
 	min-height: 150px;
 	padding: 15px 20px;
-	background-color: #ddd;
+	background-color: #eee;
 	font-weight: 400;
 }
 
