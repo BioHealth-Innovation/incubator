@@ -11,6 +11,7 @@ html, body {
 a {
 	text-decoration: none;
 	color: #EC1D25;
+	outline: 0;
 }
 
 a:hover {
@@ -34,12 +35,12 @@ a:hover {
 img.gray {
 	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
 	filter: gray; /* IE6-9 */
-	-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */	
+	-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
 }
 
-img.gray:hover{
+img.gray:hover {
 	filter: none;
-	-webkit-filter: grayscale(0%);	
+	-webkit-filter: grayscale(0%);
 }
 
 /* Logo Containers for rows of logos*/
@@ -52,7 +53,7 @@ img.gray:hover{
 	max-width: 425px;
 }
 
-.logo-container img{
+.logo-container img {
 	margin: 5px;
 	margin-right: 10px;
 	margin-left: 10px;
@@ -60,7 +61,7 @@ img.gray:hover{
 }
 
 .logo-container.tenant {
-	max-width: 600px;	
+	max-width: 600px;
 }
 
 /* LEFT MENU *HIDDEN FOR NOW* */
@@ -104,9 +105,8 @@ img.gray:hover{
 	list-style: url(/incubator/images/default-dot.png);
 }
 
-
 /* CANVAS BACKGROUNDS */
-.background, footer{
+.background, footer {
 	background: no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -114,7 +114,7 @@ img.gray:hover{
 	background-size: cover;
 }
 
-.background.printer, footer{
+.background.printer, footer {
 	background-image: url(/incubator/images/DSCN0101.JPG);
 }
 
@@ -127,6 +127,7 @@ footer {
 
 .main-description {
 	background-color: #eee;
+	border-bottom: 1px solid #dddddd;
 	min-height: 300px;
 }
 
@@ -144,13 +145,22 @@ footer {
 	width: 100%;
 	text-align: center;
 	font-weight: 400;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.description-text p {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .tenants {
 	min-height: 200px;
 }
 
-.space img{
+.space img {
 	width: 100%;
 	margin-top: 15px;
 	margin-bottom: 15px;
@@ -183,19 +193,20 @@ footer {
 
 .people-bios {
 	background-color: #eee;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
 	padding: 5px;
 }
 
 .people {
 	width: 150px;
 	display: block;
-	margin: 20px auto 60px;
-	#border: 2px solid #FF454C;
+	margin: 40px auto 60px;
+	border: 2px solid #FFFFFF;
 	border-radius: 182px;
 }
 
 .people:hover {
-	#border: 2px solid #231F20;
 	cursor: pointer;
 	filter: none;
 }
@@ -216,6 +227,11 @@ footer {
 	cursor: pointer;
 }
 
+.provider {
+	width: 200px;
+	border: 1px solid #DDDDDD
+}
+
 .contact {
 	padding: 5px;
 }
@@ -230,17 +246,17 @@ form {
 	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
-	display:block;
+	display: block;
+	font-weight: 400;
 }
 
-textarea {
-	max-width 500px;
+textarea {max-width 500px;
 	width: 100%;
 	min-width: 100%;
 }
 
 form button {
-	margin-top:10px;
+	margin-top: 10px;
 }
 
 #submit {
@@ -371,8 +387,6 @@ ul.css-tabs {
 	list-style: none;
 	text-align: center;
 	-webkit-padding-start: 0px;
-		background-color: #EEEEEE;
-
 }
 
 /* single tab */
@@ -390,22 +404,23 @@ ul.css-tabs li {
 .tabs {
 }
 
-ul.css-tabs a{
-	
+ul.css-tabs a {
+
 	float: left;
 	font-size: 13px;
 	display: block;
 	padding: 10px 10px;
 	margin: 8px;
 	text-decoration: none;
-	border-bottom: 2px solid #EEEEEE;
+	border-bottom: 2px solid #FFFFFF;
 	opacity: 0.5;
 	-webkit-opacity: 0.5;
 	-moz-opacity: 0.5;
 }
 
 ul.css-tabs a img {
-	margin: 5px;		
+	margin: 10px;
+	margin-bottom: 15px;
 }
 
 ul.css-tabs a:hover {
@@ -430,13 +445,14 @@ ul.css-tabs a.current {
 	display: none;
 	min-height: 150px;
 	padding: 15px 20px;
-	background-color: #eee;
+	background-color: #EEEEEE;
+	border-bottom: 1px solid #dddddd;
 	font-weight: 400;
 }
 
 .css-panes div p {
 	width: 100%;
-	max-width: 800px;
+	max-width: 450px;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
