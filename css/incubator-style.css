@@ -392,7 +392,9 @@ ul.css-tabs {
 /* single tab */
 ul.css-tabs li {
 	padding: 0px;
-	margin: 0;
+	margin-left: 10px;
+	margin-right: 10px;
+	max-width: 80px;
 	list-style-type: none;
 	display: inline-block;
 	color: #FF454C;
@@ -405,12 +407,14 @@ ul.css-tabs li {
 }
 
 ul.css-tabs a {
-
+	outline:0;
 	float: left;
 	font-size: 13px;
 	display: block;
 	padding: 10px 10px;
 	margin: 8px;
+	margin-right:auto;
+	margin-left:auto;
 	text-decoration: none;
 	border-bottom: 2px solid #FFFFFF;
 	opacity: 0.5;
@@ -436,6 +440,8 @@ ul.css-tabs a.current {
 	opacity: 1;
 	-webkit-opacity: 1;
 	-moz-opacity: 1;
+	color: #FF454C;
+	
 }
 
 /* tab pane */
