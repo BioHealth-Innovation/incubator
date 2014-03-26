@@ -456,12 +456,11 @@ ul.css-tabs a.current {
 	font-weight: 400;
 }
 
-.css-panes div p {
-	width: 100%;
-	max-width: 450px;
+.css-panes div p{
 	margin-left: auto;
 	margin-right: auto;
-	display: block;
-	text-align: justify;
+	margin-bottom: 0;
+	max-width: 404px;
+	width:100%;
 }
 
