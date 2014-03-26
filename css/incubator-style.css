@@ -160,6 +160,10 @@ footer {
 	min-height: 200px;
 }
 
+ul.current-tenants li a {
+	opacity: 1;
+}
+
 .space img {
 	width: 100%;
 	margin-top: 15px;
@@ -198,10 +202,16 @@ footer {
 	padding: 5px;
 }
 
+.people-bios p {
+	text-align: center;
+	font-weight: 400;
+	margin-bottom: 60px;
+}
+
 .people {
 	width: 150px;
 	display: block;
-	margin: 40px auto 60px;
+	margin: 40px auto 20px;
 	border: 2px solid #FFFFFF;
 	border-radius: 182px;
 }
@@ -209,6 +219,11 @@ footer {
 .people:hover {
 	cursor: pointer;
 	filter: none;
+	outline: 0;
+}
+
+.people a {
+	outline: 0;
 }
 
 .logo {
@@ -259,6 +274,10 @@ form button {
 	margin-top: 10px;
 }
 
+button.red {
+	color: #FF454C;
+}
+
 #submit {
 	background-color: #12948a;
 	border-color: #45C9C0;
@@ -288,6 +307,12 @@ form button {
 	font-size: 50px;
 	margin: 20px;
 	color: #231F20;
+}
+
+@media (max-width: 767px) {
+	.title-main {
+		font-size: 25px;
+	}
 }
 
 .main-icon {
@@ -407,14 +432,14 @@ ul.css-tabs li {
 }
 
 ul.css-tabs a {
-	outline:0;
+	outline: 0;
 	float: left;
 	font-size: 13px;
 	display: block;
 	padding: 10px 10px;
 	margin: 8px;
-	margin-right:auto;
-	margin-left:auto;
+	margin-right: auto;
+	margin-left: auto;
 	text-decoration: none;
 	border-bottom: 2px solid #FFFFFF;
 	opacity: 0.5;
@@ -441,7 +466,6 @@ ul.css-tabs a.current {
 	-webkit-opacity: 1;
 	-moz-opacity: 1;
 	color: #FF454C;
-	
 }
 
 /* tab pane */
@@ -456,11 +480,11 @@ ul.css-tabs a.current {
 	font-weight: 400;
 }
 
-.css-panes div p{
+.css-panes div p {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 0;
 	max-width: 404px;
-	width:100%;
+	width: 100%;
 }
 

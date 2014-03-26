@@ -92,11 +92,23 @@
 			</div>
 
 			<div class="row tenants">
-				<div class="logo-container tenant">
-					<a href="#" target="_blank"><img src="http://placehold.it/150x35&text=MockV" /></a>
-					<a href="#" target="_blank"><img src="http://placehold.it/150x35&text=Strand" /></a>
-					<a href="#" target="_blank"><img src="http://placehold.it/150x35&text=Mimetas" /></a>
+				<div class="col-md-5 description-text">
+					<p>
+						Current Incubator Tenants
+					</p>
+					
 				</div>
+				<ul class="css-tabs current-tenants">
+					<li>
+						<a href="javascript:"><img src="/incubator/images/icons/bulb.svg"><br><span>MockV Solutions</span></a>
+					</li>
+					<li>
+						<a href="javascript:"><img src="/incubator/images/icons/bulb.svg"><br><span>Strand Genomics</span></a>
+					</li>
+					<li>
+						<a href="javascript:"><img src="/incubator/images/icons/bulb.svg"><br><span>Mimetas<br>B.V.</span></a>
+					</li>
+				</ul>
 			</div>
 
 			<div class="row people-bios" id="eir">
@@ -109,7 +121,8 @@
 					</p>
 				</div>
 				<div class="col-sm-2 col-xs-10">
-					<a data-toggle="modal" data-target="#todd-bio-modal" > <img class="people gray" src="/incubator/images/todd-chappell.png"/></a>
+					<!--<a data-toggle="modal" data-target="#todd-bio-modal" >--><a href="javascript:"><img class="people gray" src="/incubator/images/todd-chappell.png"/></a>
+					<p>Todd Chappell</p>
 				</div>
 
 				<div class="modal fade" id="todd-bio-modal" tabindex="-1" role="dialog" aria-labelledby="todd-bio-label" aria-hidden="true">
@@ -136,18 +149,23 @@
 
 				<div class="col-sm-2 col-xs-10">
 					<a href="javascript:"> <img class="people gray" src="/incubator/images/ram-aiyar.png"/></a>
+					<p>Ram Aiyar</p>
 				</div>
 				<div class="col-sm-2 col-xs-10">
 					<a href="javascript:"> <img class="people gray" src="/incubator/images/ken-malone.png"/></a>
+					<p>Ken Malone</p>
 				</div>
 				<div class="col-sm-2 col-xs-10">
 					<a href="javascript:"> <img class="people gray" src="/incubator/images/rich-moore.jpg"/></a>
+					<p>Richard Moore</p>
 				</div>
 				<div class="col-sm-2 col-xs-10">
 					<a href="javascript:"> <img class="people gray" src="http://placehold.it/150&text=CFLD"/></a>
+					<p>CFLD EIR</p>
 				</div>
 				<div class="col-sm-2 col-xs-10">
 					<a href="javascript:"> <img class="people gray" src="http://placehold.it/150&text=..."/></a>
+					<p></p>
 				</div>
 			</div>
 			<!--
@@ -357,7 +375,7 @@
 			</div>
 			<div class="row tabs">
 				<!-- the tabs -->
-				<ul class="css-tabs">
+				<ul class="css-tabs" id="css-tab-switch">
 					<li>
 						<a href="javascript:"><img src="/incubator/images/icons/fire.svg"><br><span> Incubation Services</span></a>
 					</li>
@@ -463,7 +481,7 @@
 					</div>
 					<div class="form-group">
 						<div class="col-sm-10">
-							<button type="submit" class="btn btn-default">
+							<button type="submit" class="btn btn-default red">
 								Submit
 							</button>
 						</div>
@@ -489,7 +507,7 @@
 	<script type="text/javascript">
 		$(function() {
 			// setup ul.tabs to work as tabs for each div directly under div.panes
-			$(".css-tabs").tabs(".css-panes > div", {
+			$("#css-tab-switch").tabs(".css-panes > div", {
 				//event : 'mouseover'
 			});
 		});

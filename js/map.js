@@ -55,21 +55,28 @@ function initialize() {
 			title : 'BHI',
 			lat : 39.0824908,
 			lng : -77.145012,
-			description : '<div class= "infowindow"><img src="/incubator/images/bhi-office-external.jpg"/><p><strong>BioHealth Innovation</strong><a target="_blank" href="https://www.google.com/maps/preview?q=BioHealth+Innovation+Rockville"><br>22 Baltimore Road<br>Rockville, MD 20850</a><br><br>Something about the building here.</p></div>',
+			description : '<div class= "infowindow"><img src="/incubator/images/bhi-office-external.jpg"/><p><strong>BioHealth Innovation</strong><a target="_blank" href="https://www.google.com/maps/preview?q=BioHealth+Innovation+Rockville"><br>22 Baltimore Road<br>Rockville, MD 20850</a><br><br></p></div>',
 			icon : '',
 		},
 		metro : {
 			title : 'Rockville Metro',
 			lat : 39.0847532,
 			lng : -77.1463325,
-			description : '<div class= "infowindow"><img src="/incubator/images/rockville-metro-external.jpg"/><p><strong>Rockville Metro Station</strong><a target="_blank" href="https://www.google.com/maps/preview?q=Rockville+Metro+Station"><br>251 Hungerford Drive<br>Rockville, MD 20850</a><br><br>Something about the metro here.</p></div>',
+			description : '<div class= "infowindow"><img src="/incubator/images/rockville-metro-external.jpg"/><p><strong>Rockville Metro Station</strong><a target="_blank" href="https://www.google.com/maps/preview?q=Rockville+Metro+Station"><br>251 Hungerford Drive<br>Rockville, MD 20850</a><br><br></p></div>',
 			icon : '',
 		},
 		downtown : {
 			title : 'Rockville Town Center',
 			lat : 39.0846349,
 			lng : -77.1515842,
-			description : '<div class= "infowindow"><img src="/incubator/images/rockville-town-square-external.jpg"/><p><strong>Rockville Town Center</strong><a target="_blank" href="https://www.google.com/maps/preview?q=Rockville+Town+Center"><br>200 E Middle Lane<br>Rockville, MD 20850</a><br><br>Something about the town center here.</p></div>',
+			description : '<div class= "infowindow"><img src="/incubator/images/rockville-town-square-external.jpg"/><p><strong>Rockville Town Center</strong><a target="_blank" href="https://www.google.com/maps/preview?q=Rockville+Town+Center"><br>200 E Middle Lane<br>Rockville, MD 20850</a><br><br></p></div>',
+			icon : '',
+		},
+		ric : {
+			title : 'Rockville Innovation Center',
+			lat : 39.0867186,
+			lng : -77.1517366,
+			description : '<div class= "infowindow"><img src="/incubator/images/ric-external.jpg"/><p><strong>Rockville Innovation Center</strong><a target="_blank" href="https://www.google.com/maps/preview?q=155+Gibbs+St+Rockville+MD+20850"><br>155 Gibbs Street<br>Rockville, MD 20850</a><br><br></p></div>',
 			icon : '',
 		}
 	};
