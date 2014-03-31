@@ -115,7 +115,7 @@ img.gray:hover {
 }
 
 .background.printer, footer {
-	background-image: url(/incubator/images/DSCN0101.JPG);
+	background-image: url(/incubator/images/incubator-space.JPG);
 }
 
 footer {
@@ -249,6 +249,7 @@ ul.current-tenants li a {
 
 .contact {
 	padding: 5px;
+	min-height: 400px;
 }
 
 .application-section {
@@ -265,17 +266,14 @@ form {
 	font-weight: 400;
 }
 
-textarea {max-width 500px;
+textarea {
+	max-width 500px;
 	width: 100%;
 	min-width: 100%;
 }
 
 form button {
 	margin-top: 10px;
-}
-
-button.red {
-	color: #FF454C;
 }
 
 #submit {
