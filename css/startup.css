@@ -1,0 +1,61 @@
+body {
+	font-family: Raleway;
+	font-weight: 400;
+}
+
+.startup-container table {
+	color: #eeeeee;
+	border-collapse: collapse;
+	background-color: #EEEEEE;
+}
+
+.startup-container {
+	margin: 10%;
+}
+
+.startup-container td {
+	border-bottom: 4px solid #FFFFFF;
+}
+
+.startup-container .top {
+	color: #FFFFFF;
+	background-color: #269ABC;
+}
+
+.startup-container .left, .middle {
+	background-color: #282828;
+}
+
+.startup-container img {
+	margin: 20px;
+}
+
+.startup-container .left img {
+	width: 100px;
+}
+
+.startup-container .section-header {
+	margin-left: 20px;
+	font-size: 20px;
+	border-bottom: 1px solid #eeeeee;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	line-height: 30px;
+}
+
+.startup-container .company-name {
+	color: #269ABC;
+	font-size: 18px;
+	margin-left: 20px;
+}
+
+.startup-container .company-description {
+	margin: 20px;
+	margin-top: 5px;
+	font-size: 14px;
+	text-align: justify;
+}
+
+.startup-container .top .company-description {
+	margin: 30px;
+}
